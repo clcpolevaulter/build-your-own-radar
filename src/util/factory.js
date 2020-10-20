@@ -259,7 +259,7 @@ function plotLoading (content) {
 function plotLogo (content) {
   content.append('div')
     .attr('class', 'input-sheet__logo')
-    .html('<a href="https://www.thoughtworks.com"><img src="/images/tw-logo.png" / ></a>')
+    .html('<a href="https://www.thoughtworks.com"><img src="./images/tw-logo.png" / ></a>')
 }
 
 function plotFooter (content) {
@@ -278,6 +278,7 @@ function plotFooter (content) {
 function plotBanner (content, text) {
   content.append('div')
     .attr('class', 'input-sheet__banner')
+    .attr('style', 'background-image: url(\'./images/tech-radar-landing-page-wide.png\')')
     .html(text)
 }
 

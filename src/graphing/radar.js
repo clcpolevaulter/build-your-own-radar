@@ -442,7 +442,7 @@ const Radar = function (size, radar) {
     header.select('.radar-title')
       .append('div')
       .attr('class', 'radar-title__logo')
-      .html('<a href="https://www.thoughtworks.com"> <img src="/images/logo.png" /> </a>')
+      .html('<a href="https://www.thoughtworks.com"> <img src="./images/logo.png" /> </a>')
 
     buttonsGroup = header.append('div')
       .classed('buttons-group', true)
@@ -487,6 +487,7 @@ const Radar = function (size, radar) {
       .attr('id', 'auto-complete')
       .attr('placeholder', 'Search')
       .classed('search-radar', true)
+      .attr('style', 'background-image: url(\'./images/search-logo-2x.svg\')')
 
     AutoComplete('#auto-complete', quadrants, searchBlip)
   }
